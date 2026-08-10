@@ -1,0 +1,14 @@
+/* Localizable.strings - UnboundReport */
+
+"report.today" = "اليوم";
+"report.top_apps" = "أكثر التطبيقات";
+"report.no_usage" = "لا يوجد استخدام بعد اليوم.";
+"report.daily_goal" = "الهدف اليومي";
+"report.goal_of" = "من هدف %@";
+"report.goal_reached" = "لقد وصلت إلى هدفك اليوم.";
+"report.goal_remaining" = "متبقٍ %@ في هدفك.";
+"report.comparison.less" = "%@ أقل من أمس";
+"report.comparison.more" = "%@ أكثر من أمس";
+"report.duration.hours_minutes" = "%@س %@د";
+"report.duration.hours" = "%@س";
+"report.duration.minutes" = "%@د";

@@ -1,0 +1,14 @@
+/* Localizable.strings - UnboundReport */
+
+"report.today" = "Today";
+"report.top_apps" = "Top Apps";
+"report.no_usage" = "No usage yet today.";
+"report.daily_goal" = "Daily Goal";
+"report.goal_of" = "of %@ goal";
+"report.goal_reached" = "You've reached today's goal.";
+"report.goal_remaining" = "%@ remaining in your goal.";
+"report.comparison.less" = "%@ less than yesterday";
+"report.comparison.more" = "%@ more than yesterday";
+"report.duration.hours_minutes" = "%@h %@m";
+"report.duration.hours" = "%@h";
+"report.duration.minutes" = "%@m";
