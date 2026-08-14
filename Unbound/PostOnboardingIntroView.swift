@@ -7,7 +7,7 @@ struct PostOnboardingIntroView: View {
     @Environment(\.colorScheme) private var colorScheme
 
     @State private var videoFinished = false
-    @State private var showWelcomeButton = false
+    @State private var showWelcomeButton = true
     @State private var rateTapped = false
 
     var body: some View {
@@ -45,11 +45,11 @@ struct PostOnboardingIntroView: View {
 
     private var bottomButton: some View {
         Button {
-            if showWelcomeButton {
+//            if showWelcomeButton {
                 store.completeIntro()
-            } else {
-                handleRateUs()
-            }
+//            } else {
+//                handleRateUs()
+//            }
         } label: {
             HStack(spacing: 10) {
                 Image(systemName: showWelcomeButton ? "leaf.fill" : "star.fill")

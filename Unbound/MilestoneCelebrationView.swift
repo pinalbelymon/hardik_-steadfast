@@ -1,10 +1,11 @@
 import SwiftUI
-
+import StoreKit
 #if canImport(UIKit)
 import UIKit
 #endif
 
 struct MilestoneCelebrationView: View {
+    @Environment(\.requestReview) private var requestReview
     let milestone: Milestone
     let onContinue: () -> Void
 
@@ -195,11 +196,16 @@ struct MilestoneCelebrationView: View {
         .scaleEffect(treeVisible ? 1 : 0.85)
         .opacity(treeVisible ? 1 : 0)
     }
+    
 
     private var continueButton: some View {
-        Button(action: onContinue) {
+        Button {
+            requestReview()
+            onContinue()
+        } label: {
             HStack(spacing: 8) {
                 Image(systemName: "checkmark.circle.fill")
+
                 Text(L("common.continue"))
                     .font(.headline)
             }
@@ -208,16 +214,25 @@ struct MilestoneCelebrationView: View {
             .foregroundStyle(.white)
             .background(
                 LinearGradient(
-                    colors: [Theme.accent, Theme.accent.opacity(0.75)],
+                    colors: [
+                        Theme.accent,
+                        Theme.accent.opacity(0.75)
+                    ],
                     startPoint: .leading,
                     endPoint: .trailing
                 ),
                 in: Capsule()
             )
-            .shadow(color: Theme.accent.opacity(0.45), radius: 16, y: 8)
+            .shadow(
+                color: Theme.accent.opacity(0.45),
+                radius: 16,
+                y: 8
+            )
         }
         .buttonStyle(PressableButtonStyle())
     }
+
+    
 
     private func runCelebrationSequence() {
         #if canImport(UIKit)
@@ -250,7 +265,10 @@ struct MilestoneCelebrationView: View {
             raysSpin = true
             shimmer = true
             confettiBurst = true
+           
+
         }
+        
     }
 }
 

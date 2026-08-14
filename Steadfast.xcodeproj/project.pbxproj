@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A1000001302702B6002DAD46 /* UnboundMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A1000002302702B6002DAD46 /* UnboundMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A1000003302702B6002DAD46 /* UnboundReport.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A1000004302702B6002DAD46 /* UnboundReport.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A1000003302702B6002DAD46 /* UnboundReport.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = A1000004302702B6002DAD46 /* UnboundReport.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +36,19 @@
 			dstSubfolderSpec = 13;
 			files = (
 				A1000001302702B6002DAD46 /* UnboundMonitor.appex in Embed Foundation Extensions */,
-				A1000003302702B6002DAD46 /* UnboundReport.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A100001D302702B6002DAD46 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				A1000003302702B6002DAD46 /* UnboundReport.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -146,6 +156,7 @@
 				56D1296B302702B6002DAD46 /* Frameworks */,
 				56D1296C302702B6002DAD46 /* Resources */,
 				A1000009302702B6002DAD46 /* Embed Foundation Extensions */,
+				A100001D302702B6002DAD46 /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
@@ -457,7 +468,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Unbound/Unbound.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_TEAM = WFSZ3VZNKR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -496,7 +507,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Unbound/Unbound.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_TEAM = WFSZ3VZNKR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -589,7 +600,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = UnboundReport/UnboundReport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = WFSZ3VZNKR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UnboundReport/Info.plist;
@@ -617,7 +628,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = UnboundReport/UnboundReport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = WFSZ3VZNKR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UnboundReport/Info.plist;
